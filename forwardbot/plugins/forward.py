@@ -54,8 +54,7 @@ async def handler(event):
                 break
         await event.respond('**Select What you need to forward**', buttons=[
                     [Button.inline('ᴀʟʟ ᴍᴇssᴀɢᴇs', b'all'), Button.inline('ᴏɴʟʏ ᴘʜᴏᴛᴏs', b'photo')],
-                    [Button.inline('ᴏɴʟʏ ᴅᴏᴄᴜᴍᴇɴᴛs', b'docs'), Button.inline('ᴏɴʟʏ ᴠɪᴅᴇᴏ' , b'video')],
-                    [InlineKeyboardButton("❌Don't 🧨 Toch 🚫',", url='https://t.me/Marvel_i_d_f_h_n_hindi')]
+                    [Button.inline('ᴏɴʟʏ ᴅᴏᴄᴜᴍᴇɴᴛs', b'docs'), Button.inline('ᴏɴʟʏ ᴠɪᴅᴇᴏ' , b'video')]
                     ])
 
 @forwardbot_cmd("reset", is_args=False)
