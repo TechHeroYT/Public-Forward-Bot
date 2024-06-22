@@ -22,16 +22,16 @@ async def handler(event):
         await event.respond("You are not authorized to use this Bot. Create your own.")
         return
     async with bot.conversation(event.chat_id) as conv:
-        await conv.send_message("**» ᴘʟᴇᴀsᴇ sᴇɴᴅ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ɪᴅ ғʀᴏᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ғᴏʀᴡᴀʀᴅ ᴍᴇssᴀɢᴇs ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴛʜɪs ᴍᴇssᴀɢᴇ.** **»Aapne us *Channel* ki ID do jis Channel se aap ko file lena hai..or  **")
+        await conv.send_message("**» ᴘʟᴇᴀsᴇ sᴇɴᴅ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ɪᴅ ғʀᴏᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ғᴏʀᴡᴀʀᴅ ᴍᴇssᴀɢᴇs ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴛʜɪs ᴍᴇssᴀɢᴇ.** **»Aapne us *Channel* ki ID do jis Channel se aap ko file lena hai..**")
         while True:
             r = conv.wait_event(events.NewMessage(chats=event.chat_id))
             r = await r
             global fromchannel
             fromchannel = r.message.message.strip()
             if not r.is_reply:
-                await conv.send_message("**» ᴘʟᴇᴀsᴇ sᴇɴᴅ ᴛʜᴇ ᴍᴇssᴀɢᴇ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴛʜᴇ ᴍᴇssᴀɢᴇ.**")
+                await conv.send_message("**» ᴘʟᴇᴀsᴇ sᴇɴᴅ ᴛʜᴇ ᴍᴇssᴀɢᴇ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴛʜᴇ ᴍᴇssᴀɢᴇ. Are bola na ᴍᴇssᴀɢᴇ ko replye ker ke ID send karo!!!**")
             else:
-                await conv.send_message("**» ᴏᴋᴀʏ ɴᴏᴡ sᴇɴᴅ ᴍᴇ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ɪᴅ ᴛᴏ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ғᴏʀᴡᴀʀᴅ ᴍᴇssᴀɢᴇs ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴛʜɪs ᴍᴇssᴀɢᴇ.**")
+                await conv.send_message("**» ᴏᴋᴀʏ ɴᴏᴡ sᴇɴᴅ ᴍᴇ ᴛʜᴇ ᴄʜᴀɴɴᴇʟ ɪᴅ ᴛᴏ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ғᴏʀᴡᴀʀᴅ ᴍᴇssᴀɢᴇs ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴛʜɪs ᴍᴇssᴀɢᴇ.** **»Ab us *Channel* ki ID do jis Channel per aap ko file dena hai..")
                 break
         while True:
             p = conv.wait_event(events.NewMessage(chats=event.chat_id))
@@ -39,9 +39,9 @@ async def handler(event):
             global tochannel
             tochannel = p.message.message.strip()
             if not p.is_reply:
-                await conv.send_message("**» ᴘʟᴇᴀsᴇ sᴇɴᴅ ᴛʜᴇ ᴍᴇssᴀɢᴇ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴛʜᴇ ᴍᴇssᴀɢᴇ.**")
+                await conv.send_message("**» ᴘʟᴇᴀsᴇ sᴇɴᴅ ᴛʜᴇ ᴍᴇssᴀɢᴇ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴛʜᴇ ᴍᴇssᴀɢᴇ. *Pure topa insaan ho ka?..* bola na reply ker ke send karo!! **")
             else:
-                await conv.send_message("**» ᴏᴋᴀʏ ɴᴏᴡ sᴇɴᴅ ᴍᴇ ᴛʜᴇ ᴍᴇssᴀɢᴇ ɪᴅ ғʀᴏᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴛᴀʀᴛ ғᴏʀᴡᴀʀᴅɪɴɢ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴛʜɪs ᴍᴇssᴀɢᴇ.(0, ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ғᴏʀᴡᴀʀᴅ ғʀᴏᴍ ʙᴇɢɪɴɪɴɢ)**")
+                await conv.send_message("**» ᴏᴋᴀʏ ɴᴏᴡ sᴇɴᴅ ᴍᴇ ᴛʜᴇ ᴍᴇssᴀɢᴇ ɪᴅ ғʀᴏᴍ ᴡʜᴇʀᴇ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ sᴛᴀʀᴛ ғᴏʀᴡᴀʀᴅɪɴɢ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴛʜɪs ᴍᴇssᴀɢᴇ.(0, ɪғ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ғᴏʀᴡᴀʀᴅ ғʀᴏᴍ ʙᴇɢɪɴɪɴɢ).**")
                 break
         while True:
             q = conv.wait_event(events.NewMessage(chats=event.chat_id))
@@ -49,12 +49,13 @@ async def handler(event):
             global offsetid
             offsetid = q.message.message.strip()
             if not q.is_reply:
-                await conv.send_message("**» ᴘʟᴇᴀsᴇ sᴇɴᴅ ᴛʜᴇ ᴍᴇssᴀɢᴇ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴛʜᴇ ᴍᴇssᴀɢᴇ.**")
+                await conv.send_message("**» ᴘʟᴇᴀsᴇ sᴇɴᴅ ᴛʜᴇ ᴍᴇssᴀɢᴇ ᴀs ᴀ ʀᴇᴘʟʏ ᴛᴏ ᴛʜᴇ ᴍᴇssᴀɢᴇ. HA pata chal gaya *Pure topa insaan ho* bola na reply ker ke send karo!! **")
             else:
                 break
         await event.respond('**Select What you need to forward**', buttons=[
                     [Button.inline('ᴀʟʟ ᴍᴇssᴀɢᴇs', b'all'), Button.inline('ᴏɴʟʏ ᴘʜᴏᴛᴏs', b'photo')],
-                    [Button.inline('ᴏɴʟʏ ᴅᴏᴄᴜᴍᴇɴᴛs', b'docs'), Button.inline('ᴏɴʟʏ ᴠɪᴅᴇᴏ' , b'video')]
+                    [Button.inline('ᴏɴʟʏ ᴅᴏᴄᴜᴍᴇɴᴛs', b'docs'), Button.inline('ᴏɴʟʏ ᴠɪᴅᴇᴏ' , b'video')],
+                    [InlineKeyboardButton("❌Don't 🧨 Toch 🚫',", url='https://t.me/Marvel_i_d_f_h_n_hindi')]
                     ])
 
 @forwardbot_cmd("reset", is_args=False)
@@ -88,7 +89,7 @@ async def handler(event):
 @forwardbot_cmd("status", is_args=False)
 async def handler(event):
     if not await is_sudo(event):
-        await event.respond("You are not authorized to use this Bot. Create your own.")
+        await event.respond("You are not authorized to use this Bot. Create your own.@bots_repo")
         return
     if "1" in status:
         await event.respond("**Currently Bot is forwarding messages.**")
@@ -101,7 +102,7 @@ async def handler(event):
 @forwardbot_cmd("count", is_args=False)
 async def handler(event):
     if not await is_sudo(event):
-        await event.respond("You are not authorized to use this Bot. Create your own.")
+        await event.respond("You are not authorized to use this Bot. Create your own.@bots_repo")
         return
     await event.respond(f"**You have send** {MessageCount} messages")
     print(f"**You have send** {MessageCount} messages")
@@ -123,7 +124,7 @@ async def handler(event):
         await event.delete()
     if type:
         if not await is_sudo(event):
-            await event.respond("You are not authorized to use this Bot. Create your own.")
+            await event.respond("You are not authorized to use this Bot. Create your own.@bots_repo")
             return
         if "1" in status:
             await event.respond("A task is already running.")
