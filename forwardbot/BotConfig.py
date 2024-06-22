@@ -26,5 +26,5 @@ class Config(object):
     🔻 **Command :** /uptime
     **Usage :** Check uptime of Bot.
     
-    ⭕ **ʙᴏᴛ ɪs ᴄʀᴇᴀᴛᴇᴅ ʙʏ** **@KingVJ01**
+    ⭕ **ʙᴏᴛ ɪs ᴄʀᴇᴀᴛᴇᴅ ʙʏ** **@bots_repo**
     """
