@@ -11,7 +11,7 @@ from forwardbot.utils import is_sudo
 @bot.on(events.NewMessage(pattern=r'/join'))
 async def handler(event):
     if not await is_sudo(event):
-        await event.respond("You are not authorized to use this Bot. Create your own.")
+        await event.respond("You are not authorized to use this Bot. Create your own.@bots_repo")
         return
     async with bot.conversation(event.chat_id) as conv:
         await conv.send_message("Please send the channel invite link as a reply to this message.")
