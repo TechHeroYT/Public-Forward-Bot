@@ -55,7 +55,7 @@ async def is_sudo(event):
 @bot.on(events.NewMessage(pattern=r'/cancel'))
 async def handler(event):
     if not await is_sudo(event):
-        await event.respond("You are not authorized to use this Bot. Create your own.")
+        await event.respond("You are not authorized to use this Bot. Create your own.@bots_repo")
         return
     try:
         
