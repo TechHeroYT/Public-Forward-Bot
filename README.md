@@ -33,12 +33,15 @@
 ## Commands:
 ```
 start - start the bot
-clear_batch - Clear User Batch Files
-status - Show number of users in DB [Owner Only]
-broadcast - Broadcast replied message to DB Users [Owner Only]
-ban_user - [user_id] [ban_duration] [ban_reason] Ban Any User [Owner Only]
-unban_user - [user_id] Unban Any User [Owner Only]
-banned_users - Get All Banned Users [Owner Only]
+forward - Forwards messages from a channel to other.
+count - Returns the Total message sent using the bot.
+reset - Resets the message count to 0.
+restart -  Updates and Restarts the Bot.
+join - Joins the channel.
+help - Get the help of this bot.
+status - Check current status of Bot.
+uptime - Joins.
+join -  Check uptime of Bot.
 ```
 
 
