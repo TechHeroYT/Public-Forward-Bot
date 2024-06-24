@@ -1,4 +1,4 @@
-# VJ-Public-Forward-Bot
+# Tech_Hero-Public-Forward-Bot
 
 **A Bot That Can Forward All Message From One Channel To Another Without Admin Permission.**
 
