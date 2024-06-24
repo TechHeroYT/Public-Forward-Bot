@@ -47,11 +47,11 @@ join -  Check uptime of Bot.
 
 ## How To Make Your Own [Video Tutorial](https://youtube.com/@tech1hero?si=PoZaxzH4m5bRUSXi)
 
-## Update Channel [VJ Botz](https://telegram.me/bots_repo)
+## Update Channel [TEch HEro Botz](https://telegram.me/bots_repo)
 
-## Support Group [VJ Support](https://telegram.me/+OVQi11VVWTZkOGZl)
+## Support Group [TEch Support](https://telegram.me/+OVQi11VVWTZkOGZl)
 
-## Contact Owner [Tech VJ](https://telegram.me/hero_botss)
+## Contact Owner [Tech HEro](https://telegram.me/hero_botss)
 
 #### Credit :- 
 
