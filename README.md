@@ -2,25 +2,58 @@
 
 **A Bot That Can Forward All Message From One Channel To Another Without Admin Permission.**
 
+💢 ᴛʜᴇ ᴄᴏᴍᴍᴀɴᴅs ɪɴ ᴛʜᴇ ʙᴏᴛ ᴀʀᴇ:
+    
+    🔻 Command : /forward
+    Usage :  Forwards messages from a channel to other.
+    🔻 Command : /count
+    Usage :  Returns the Total message sent using the bot.
+    🔻 Command : /reset
+    Usage :  Resets the message count to 0.
+    🔻 Command : /restart
+    Usage :  Updates and Restarts the Bot.
+    🔻 Command : /join
+    Usage :  Joins the channel.
+    🔻 Command : /help
+    Usage :  Get the help of this bot.
+    🔻 Command : /status
+    Usage : Check current status of Bot.
+    🔻 Command : /uptime
+    Usage : Check uptime of Bot.
+
 #### Environment Variables
 
 - <b>`API_ID` : Get From [my.telegram.org](https://my.telegram.org)
 - `API_HASH` : Get From [my.telegram.org](https://my.telegram.org)
 - `BOT_TOKEN` : Get From [BotFather](https://telegram.me/BotFather)
-- `STRING_SESSION` : Use Telethon String Session [Generate Here](https://telegram.me/VJStringSessionBot)
+- `STRING_SESSION` : Use Telethon String Session [Generate Here](https://telegram.me/EsproStringBot)
 - `SUDO_USERS` : It mean Admin Id Only Sudo User can use this bot</b>
 
-## How To Make Your Own [Video Tutorial](https://youtu.be/qp3Jvzw2jnY)
 
-## Update Channel [VJ Botz](https://telegram.me/vj_botz)
+## Commands:
+```
+start - start the bot
+clear_batch - Clear User Batch Files
+status - Show number of users in DB [Owner Only]
+broadcast - Broadcast replied message to DB Users [Owner Only]
+ban_user - [user_id] [ban_duration] [ban_reason] Ban Any User [Owner Only]
+unban_user - [user_id] Unban Any User [Owner Only]
+banned_users - Get All Banned Users [Owner Only]
+```
 
-## Support Group [VJ Support](https://telegram.me/vj_bot_disscussion)
 
-## Contact Owner [Tech VJ](https://telegram.me/kingvj01)
+## How To Make Your Own [Video Tutorial](https://youtube.com/@tech1hero?si=PoZaxzH4m5bRUSXi)
+
+## Update Channel [VJ Botz](https://telegram.me/bots_repo)
+
+## Support Group [VJ Support](https://telegram.me/+OVQi11VVWTZkOGZl)
+
+## Contact Owner [Tech VJ](https://telegram.me/hero_botss)
 
 #### Credit :- 
 
 - Rahulps1000
 - Tech VJ
+- Tech Hero 
 
 
